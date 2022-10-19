@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  #  thymeleaf:
+  #    cache: false
+  #    prefix: file:src/main/resources/templates/
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/testdb?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: codelion
+    password: *codelion1234
+  jpa:
+    hibernate:
+      ddl-auto: create
