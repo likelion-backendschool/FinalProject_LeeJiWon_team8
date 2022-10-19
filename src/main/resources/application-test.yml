@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${testDbIp:127.0.0.1}:3307/testdb?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: ${testDbId:codelion}
+    password: ${testDbPw:*codelion1234}
+  jpa:
+    hibernate:
+      ddl-auto: create
